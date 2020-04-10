@@ -18,6 +18,7 @@ body {
 
 :root {
     --primaryColor: #e6e0d4;
+    --secondaryColor: #fce0a5;
     --letterSpacingHeader: 0.5rem;
     --letterSpacingContent: 0.2rem;
 }
@@ -133,6 +134,9 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid #000;
 }
 
 .section-left .top-product img {
@@ -159,7 +163,7 @@ p {
     margin-top: 1rem;
     font-size: 2.4rem;
     padding: 1.8rem 20%;
-    background-color: rgb(190, 120, 14);
+    background-color: coral;
     color: var(--primaryColor);
     text-shadow: 0 0 5px black;
     border-radius: 4px;
@@ -185,28 +189,100 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .section-center .coffee-products-container {
-    width: 100%;
-    background-color: black;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section-center .coffee-products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .section-center .coffee-card {
-    display: inline-block;
-    background-color: red;
-    width: 220px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    margin: 1rem;
+    box-shadow: 0 0 2rem #000;
 }
 
 .section-center .coffee-card img{
-    width: 220px;
+    display: block;
+    width: 100%;
     height: 200px;
+}
+
+.section-center .coffee.card h5 {
+    margin-top: 2rem;
+}
+
+.section-center .coffee-card p {
+    margin-top: -2rem;
+    background-color: coral;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    color: white;
 }
 
 .section-right {
     flex: 1;
 }
 
+.icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 2rem;
+}
+
+.icons-container i {
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+
+
 /* Main Area End */
+
+/* Footer Start */
+
+.footer-container {
+    margin-top: 6rem;
+    background-color: var(--secondaryColor);
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid coral;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.logo-container span {
+    font-size: 2rem;
+}
+
+.contact-container {
+    display: block;
+}
+
+.contact-container span {
+    font-size: 2rem;
+}
+
+/* Footer End */
