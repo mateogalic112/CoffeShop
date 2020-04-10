@@ -26,6 +26,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Satisfy', sans-serif;
 }
 
+h2 {
+    font-size: 3.5rem;
+    letter-spacing: var(--letterSpacingHeader);
+}
+
 h3 {
     font-size: 3rem;
     letter-spacing: var(--letterSpacingContent);
@@ -162,6 +167,42 @@ p {
 
 .section-center {
     flex: 5;
+    padding: 2rem;
+}
+
+.section-center .about-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-center .about-article img {
+    height: 100%;
+    width: 100%;
+}
+
+.section-center .products-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-center .coffee-products-container {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+
+.section-center .coffee-card {
+    display: inline-block;
+    background-color: red;
+    width: 220px;
+}
+
+.section-center .coffee-card img{
+    width: 220px;
+    height: 200px;
 }
 
 .section-right {
