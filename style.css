@@ -136,7 +136,7 @@ p {
     align-items: center;
     position: sticky;
     top: 0;
-    border-right: 1px solid #000;
+    border-right: 1px solid grey;
 }
 
 .section-left .top-product img {
@@ -172,6 +172,7 @@ p {
 .section-center {
     flex: 5;
     padding: 2rem;
+    border-right: 1px solid grey;
 }
 
 .section-center .about-article {
@@ -181,8 +182,8 @@ p {
 }
 
 .section-center .about-article img {
-    height: 100%;
-    width: 100%;
+    height: 60%;
+    width: 80%;
 }
 
 .section-center .products-article {
@@ -195,7 +196,7 @@ p {
 .section-center .coffee-products-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -203,7 +204,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .section-center .coffee-card {
